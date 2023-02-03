@@ -7,7 +7,7 @@ const TaskList = ({tasks}) => {
   return (
     <div>
       {tasks.map((task) => (
-        <TasCard task={task}/>
+        <TasCard key={task.id} task={task}/>
       ))}
     </div>
   );

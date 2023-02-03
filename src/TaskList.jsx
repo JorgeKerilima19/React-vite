@@ -1,4 +1,4 @@
-
+import TasCard from "./TaskCard";
 
 const TaskList = ({tasks}) => {
   if (tasks.length === 0) {
@@ -7,10 +7,7 @@ const TaskList = ({tasks}) => {
   return (
     <div>
       {tasks.map((task) => (
-        <div key={task.id}>
-          <h2>{task.task}</h2>
-          <p>{task.description}</p>
-        </div>
+        <TasCard task={task}/>
       ))}
     </div>
   );

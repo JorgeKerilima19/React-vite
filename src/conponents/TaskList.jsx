@@ -1,13 +1,13 @@
-import TasCard from "./TaskCard";
+import TaskCard from "./TaskCard";
 
-const TaskList = ({tasks}) => {
+const TaskList = ({ tasks, deleteTask }) => {
   if (tasks.length === 0) {
     return <div>No tasks yet</div>;
   }
   return (
     <div>
       {tasks.map((task) => (
-        <TasCard key={task.id} task={task}/>
+        <TaskCard key={task.id} task={task} deleteTask={deleteTask} />
       ))}
     </div>
   );

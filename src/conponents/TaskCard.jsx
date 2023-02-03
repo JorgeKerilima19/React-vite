@@ -1,9 +1,4 @@
-
-
-export default function TasCard({task}) {
-  function deleteTask(){
-    alert("task to eliminate "+ "{ "+task.id+" }")
-  }
+export default function TaskCard({ task, deleteTask }) {
   return (
     <div>
       <h2>{task.task}</h2>

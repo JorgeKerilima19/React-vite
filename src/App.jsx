@@ -18,12 +18,15 @@ function App() {
       description: task.description 
     }]);
   }
+  function deleteTask(){
+    console.log(tasks)
+  }
 
   return (
     <>
       <h1>Hello World from Vite</h1>
       <TaskForm createTask={createTask}/>
-      <TaskList tasks={tasks} />
+      <TaskList tasks={tasks} deleteTask={deleteTask} />
     </>
   );
 }

@@ -3,7 +3,7 @@ export default function TaskCard({ task, deleteTask }) {
     <div>
       <h2>{task.task}</h2>
       <p>{task.description}</p>
-      <button onClick={deleteTask}>Complete and Delete</button>
+      <button onClick={()=>{deleteTask(task.id)}}>Complete and Delete</button>
     </div>
   );
 }

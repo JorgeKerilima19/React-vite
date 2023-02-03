@@ -6,7 +6,10 @@ export default function TaskForm({ createTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createTask(task);
+    createTask({
+      task,
+      description
+    });
   };
   return (
     <form onSubmit={handleSubmit}>

@@ -8,7 +8,7 @@ function TaskList() {
     return <div>No tasks yet</div>;
   }
   return (
-    <div>
+    <div className="card-container">
       {tasks.map((task) => (
         <TaskCard key={task.id} task={task} />
       ))}

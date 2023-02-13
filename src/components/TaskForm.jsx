@@ -17,7 +17,7 @@ export default function TaskForm() {
     setTask("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <input
         type="text"
         placeholder="Add new task"

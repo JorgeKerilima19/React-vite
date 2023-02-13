@@ -2,10 +2,30 @@ body {
   background-color: hsl(240, 79%, 7%);
   color: rgb(223, 223, 223);
 }
-.form{
-    background-color: hsl(240, 9%, 10%);
-    display: flex;
-    justify-content: space-evenly;
+.form {
+  background-color: hsl(240, 9%, 10%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.form-input {
+  height: 2em;
+  font-size: 1em;
+  padding: 0 0.5rem;
+  outline: 0;
+}
+.form-textarea {
+  padding: 0.5rem 0;
+  width: 50%;
+  font-size: 1em;
+  padding: 0 0.5rem;
+  outline: 0;
+  font-family: inherit;
+  resize: none;
+}
+.form-button {
+  padding: 0 2rem;
+  font-size: inherit;
 }
 .card-container {
   height: 100vh;
@@ -15,4 +35,3 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
